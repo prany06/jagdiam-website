@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JAGDIAM — Diamond & Jewelry Wholesaler · Tokyo</title>
-  <meta name="description" content="JAGDIAM is a Tokyo-based B2B wholesaler of natural diamonds and fine jewelry. GIA and CGL certified stones supplied to dealers and jewelers since 2000." />
+  <title>JAGDIAM — ダイヤモンド・ジュエリー卸売 · 東京</title>
+  <meta name="description" content="JAGDIAMは東京を拠点とするダイヤモンド・ジュエリー卸売業者です。GIA・CGL認定ダイヤモンドをディーラー、宝石商、個人のお客様へお届けしております。" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,98 +15,191 @@
     <div class="nav-inner">
       <a href="#top" class="nav-brand">JAGDIAM</a>
       <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#offer">Offerings</a>
-        <a href="#work">Work With Us</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-i18n="nav.about">会社概要</a>
+        <a href="#offer" data-i18n="nav.offer">取扱商品</a>
+        <a href="#work" data-i18n="nav.work">お取引について</a>
+        <a href="#contact" data-i18n="nav.contact">お問い合わせ</a>
       </nav>
+      <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language">EN</button>
     </div>
   </header>
 
   <main id="top">
     <section class="hero">
       <h1 class="hero-title">JAGDIAM</h1>
-      <p class="hero-subtitle">Diamond &amp; Jewelry Wholesaler · Tokyo · Est. 2000</p>
-      <p class="hero-note">Open to retail &amp; wholesale clients</p>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">ダイヤモンド・ジュエリー卸売 · 東京 · 創業2000年</p>
+      <p class="hero-note" data-i18n="hero.note">小売・卸売のお客様、どちらも歓迎いたします</p>
     </section>
 
     <section class="tagline">
-      <p>Supplying dealers, jewelers, and private clients worldwide</p>
+      <p data-i18n="tagline">国内外のディーラー、宝石商、個人のお客様へお届けしております</p>
     </section>
 
     <section id="about" class="section about">
-      <h2 class="section-title">About</h2>
-      <p class="about-text">
-        JAGDIAM is a Tokyo-based diamond and jewelry wholesaler with over 25 years in the trade.
-        We supply GIA and CGL certified diamonds, colored stones, and fine jewelry to dealers,
-        jewelers, and private clients across Japan and internationally. Whether you're sourcing
-        a single stone or building a collection, we provide personalized service and competitive pricing.
-      </p>
+      <h2 class="section-title" data-i18n="about.title">会社概要</h2>
+      <p class="about-text" data-i18n="about.body">JAGDIAMは、東京を拠点とするダイヤモンド・ジュエリー卸売業者です。25年以上の実績を持ち、GIA・CGL認定ダイヤモンド、カラーストーン、ファインジュエリーを、国内外のディーラー、宝石商、個人のお客様にお届けしております。一石のお探しからコレクション構築まで、お客様のご要望に合わせた丁寧なサービスと競争力のある価格をご提供いたします。</p>
     </section>
 
     <section id="offer" class="section offer">
-      <h2 class="section-title">What We Offer</h2>
+      <h2 class="section-title" data-i18n="offer.title">取扱商品</h2>
       <div class="offer-grid offer-grid-five">
         <article class="offer-card">
-          <h3>Certified Diamonds</h3>
-          <p>GIA &amp; CGL certified single stones, all shapes and sizes, D&ndash;Z and fancy colors.</p>
+          <h3 data-i18n="offer.c1.t">認定ダイヤモンド</h3>
+          <p data-i18n="offer.c1.b">GIA・CGL認定の単石。あらゆるシェイプ・サイズ、D-Zカラーからファンシーカラーまで。</p>
         </article>
         <article class="offer-card">
-          <h3>Parcels &amp; Lots</h3>
-          <p>Volume supply of 50&ndash;100+ stones, ideal for manufacturers and dealers.</p>
+          <h3 data-i18n="offer.c2.t">パーセル・ロット</h3>
+          <p data-i18n="offer.c2.b">50〜100石以上のボリューム供給。メーカー・ディーラー向け。</p>
         </article>
         <article class="offer-card">
-          <h3>Fine Jewelry</h3>
-          <p>Rings, earrings, and custom pieces available for retail and wholesale buyers.</p>
+          <h3 data-i18n="offer.c3.t">ファインジュエリー</h3>
+          <p data-i18n="offer.c3.b">リング、イヤリング、カスタムピース。小売・卸売対応。</p>
         </article>
         <article class="offer-card">
-          <h3>Colored Stones</h3>
-          <p>Ruby, sapphire, emerald, and other precious gems sourced globally.</p>
+          <h3 data-i18n="offer.c4.t">カラーストーン</h3>
+          <p data-i18n="offer.c4.b">ルビー、サファイア、エメラルドなど、世界中から厳選した貴石。</p>
         </article>
         <article class="offer-card">
-          <h3>Custom Sourcing</h3>
-          <p>Can't find what you need? We source specific stones to your exact specifications.</p>
+          <h3 data-i18n="offer.c5.t">カスタムソーシング</h3>
+          <p data-i18n="offer.c5.b">お探しの石が見つからない場合、ご希望の条件に合わせてお探しいたします。</p>
         </article>
       </div>
     </section>
 
     <section id="work" class="section work">
-      <h2 class="section-title">Work With Us</h2>
-      <p class="work-lead">
-        Whether you're in Tokyo or anywhere in the world, we make it easy to do business.
-        Visit our office in Tokyo for a hands-on selection experience, or connect with us
-        online for virtual consultations. We ship internationally with full insurance and documentation.
-      </p>
+      <h2 class="section-title" data-i18n="work.title">お取引について</h2>
+      <p class="work-lead" data-i18n="work.body">東京でも海外でも、スムーズなお取引をお約束いたします。東京オフィスでの直接ご覧いただくことも、オンラインでのご相談も承っております。完全保険付きの国際配送にも対応しております。</p>
       <div class="offer-grid">
         <article class="offer-card">
-          <h3>In-Person Meetings</h3>
-          <p>Visit our Tokyo office to view and select stones personally.</p>
+          <h3 data-i18n="work.c1.t">対面でのご商談</h3>
+          <p data-i18n="work.c1.b">東京オフィスにて、直接石をご覧いただけます。</p>
         </article>
         <article class="offer-card">
-          <h3>Virtual Consultations</h3>
-          <p>Video calls to discuss your requirements and view inventory in real-time.</p>
+          <h3 data-i18n="work.c2.t">オンラインご相談</h3>
+          <p data-i18n="work.c2.b">ビデオ通話にてご要望のご相談、在庫のご確認が可能です。</p>
         </article>
         <article class="offer-card">
-          <h3>International Shipping</h3>
-          <p>Fully insured worldwide delivery with complete certification.</p>
+          <h3 data-i18n="work.c3.t">海外配送対応</h3>
+          <p data-i18n="work.c3.b">完全保険付き、認定書完備の国際配送。</p>
         </article>
       </div>
     </section>
 
     <section id="contact" class="section contact">
-      <h2 class="section-title">Contact</h2>
-      <p class="contact-lead">For trade inquiries, reach us directly. We reply within one business day.</p>
+      <h2 class="section-title" data-i18n="contact.title">お問い合わせ</h2>
+      <p class="contact-lead" data-i18n="contact.lead">お取引のご相談は、お気軽にお問い合わせください。1営業日以内にご返信いたします。</p>
       <ul class="contact-list">
-        <li><span class="contact-label">Email</span><a href="mailto:pranav.jagdiam@gmail.com">pranav.jagdiam@gmail.com</a></li>
-        <li><span class="contact-label">Phone</span><a href="tel:+81356883553">03-5688-3553</a></li>
-        <li><span class="contact-label">Instagram</span><a href="https://instagram.com/jagdiam.tokyo" target="_blank" rel="noopener">@jagdiam.tokyo</a></li>
+        <li><span class="contact-label" data-i18n="contact.email">メール</span><a href="mailto:pranav.jagdiam@gmail.com">pranav.jagdiam@gmail.com</a></li>
+        <li><span class="contact-label" data-i18n="contact.phone">電話</span><a href="tel:+81356883553">03-5688-3553</a></li>
+        <li><span class="contact-label" data-i18n="contact.ig">Instagram</span><a href="https://instagram.com/jagdiam.tokyo" target="_blank" rel="noopener">@jagdiam.tokyo</a></li>
       </ul>
-      <p class="contact-note">Prefer social? DM us on Instagram for inquiries.</p>
+      <p class="contact-note" data-i18n="contact.note">SNSをご利用の方は、Instagramのダイレクトメッセージでもお気軽にお問い合わせください。</p>
     </section>
   </main>
 
   <footer class="footer">
-    <p>&copy; 2026 JAGDIAM. Tokyo, Japan.</p>
+    <p data-i18n="footer">&copy; 2026 JAGDIAM 東京</p>
   </footer>
+
+  <script>
+    const i18n = {
+      ja: {
+        "_title": "JAGDIAM — ダイヤモンド・ジュエリー卸売 · 東京",
+        "nav.about": "会社概要",
+        "nav.offer": "取扱商品",
+        "nav.work": "お取引について",
+        "nav.contact": "お問い合わせ",
+        "hero.subtitle": "ダイヤモンド・ジュエリー卸売 · 東京 · 創業2000年",
+        "hero.note": "小売・卸売のお客様、どちらも歓迎いたします",
+        "tagline": "国内外のディーラー、宝石商、個人のお客様へお届けしております",
+        "about.title": "会社概要",
+        "about.body": "JAGDIAMは、東京を拠点とするダイヤモンド・ジュエリー卸売業者です。25年以上の実績を持ち、GIA・CGL認定ダイヤモンド、カラーストーン、ファインジュエリーを、国内外のディーラー、宝石商、個人のお客様にお届けしております。一石のお探しからコレクション構築まで、お客様のご要望に合わせた丁寧なサービスと競争力のある価格をご提供いたします。",
+        "offer.title": "取扱商品",
+        "offer.c1.t": "認定ダイヤモンド",
+        "offer.c1.b": "GIA・CGL認定の単石。あらゆるシェイプ・サイズ、D-Zカラーからファンシーカラーまで。",
+        "offer.c2.t": "パーセル・ロット",
+        "offer.c2.b": "50〜100石以上のボリューム供給。メーカー・ディーラー向け。",
+        "offer.c3.t": "ファインジュエリー",
+        "offer.c3.b": "リング、イヤリング、カスタムピース。小売・卸売対応。",
+        "offer.c4.t": "カラーストーン",
+        "offer.c4.b": "ルビー、サファイア、エメラルドなど、世界中から厳選した貴石。",
+        "offer.c5.t": "カスタムソーシング",
+        "offer.c5.b": "お探しの石が見つからない場合、ご希望の条件に合わせてお探しいたします。",
+        "work.title": "お取引について",
+        "work.body": "東京でも海外でも、スムーズなお取引をお約束いたします。東京オフィスでの直接ご覧いただくことも、オンラインでのご相談も承っております。完全保険付きの国際配送にも対応しております。",
+        "work.c1.t": "対面でのご商談",
+        "work.c1.b": "東京オフィスにて、直接石をご覧いただけます。",
+        "work.c2.t": "オンラインご相談",
+        "work.c2.b": "ビデオ通話にてご要望のご相談、在庫のご確認が可能です。",
+        "work.c3.t": "海外配送対応",
+        "work.c3.b": "完全保険付き、認定書完備の国際配送。",
+        "contact.title": "お問い合わせ",
+        "contact.lead": "お取引のご相談は、お気軽にお問い合わせください。1営業日以内にご返信いたします。",
+        "contact.email": "メール",
+        "contact.phone": "電話",
+        "contact.ig": "Instagram",
+        "contact.note": "SNSをご利用の方は、Instagramのダイレクトメッセージでもお気軽にお問い合わせください。",
+        "footer": "© 2026 JAGDIAM 東京"
+      },
+      en: {
+        "_title": "JAGDIAM — Diamond & Jewelry Wholesaler · Tokyo",
+        "nav.about": "About",
+        "nav.offer": "Offerings",
+        "nav.work": "Work With Us",
+        "nav.contact": "Contact",
+        "hero.subtitle": "Diamond & Jewelry Wholesaler · Tokyo · Est. 2000",
+        "hero.note": "Open to retail & wholesale clients",
+        "tagline": "Supplying dealers, jewelers, and private clients worldwide",
+        "about.title": "About",
+        "about.body": "JAGDIAM is a Tokyo-based diamond and jewelry wholesaler with over 25 years in the trade. We supply GIA and CGL certified diamonds, colored stones, and fine jewelry to dealers, jewelers, and private clients across Japan and internationally. Whether you're sourcing a single stone or building a collection, we provide personalized service and competitive pricing.",
+        "offer.title": "What We Offer",
+        "offer.c1.t": "Certified Diamonds",
+        "offer.c1.b": "GIA & CGL certified single stones, all shapes and sizes, D–Z and fancy colors.",
+        "offer.c2.t": "Parcels & Lots",
+        "offer.c2.b": "Volume supply of 50–100+ stones, ideal for manufacturers and dealers.",
+        "offer.c3.t": "Fine Jewelry",
+        "offer.c3.b": "Rings, earrings, and custom pieces available for retail and wholesale buyers.",
+        "offer.c4.t": "Colored Stones",
+        "offer.c4.b": "Ruby, sapphire, emerald, and other precious gems sourced globally.",
+        "offer.c5.t": "Custom Sourcing",
+        "offer.c5.b": "Can't find what you need? We source specific stones to your exact specifications.",
+        "work.title": "Work With Us",
+        "work.body": "Whether you're in Tokyo or anywhere in the world, we make it easy to do business. Visit our office in Tokyo for a hands-on selection experience, or connect with us online for virtual consultations. We ship internationally with full insurance and documentation.",
+        "work.c1.t": "In-Person Meetings",
+        "work.c1.b": "Visit our Tokyo office to view and select stones personally.",
+        "work.c2.t": "Virtual Consultations",
+        "work.c2.b": "Video calls to discuss your requirements and view inventory in real-time.",
+        "work.c3.t": "International Shipping",
+        "work.c3.b": "Fully insured worldwide delivery with complete certification.",
+        "contact.title": "Contact",
+        "contact.lead": "For trade inquiries, reach us directly. We reply within one business day.",
+        "contact.email": "Email",
+        "contact.phone": "Phone",
+        "contact.ig": "Instagram",
+        "contact.note": "Prefer social? DM us on Instagram for inquiries.",
+        "footer": "© 2026 JAGDIAM. Tokyo, Japan."
+      }
+    };
+
+    const toggle = document.getElementById('lang-toggle');
+    let lang = 'ja';
+
+    function applyLang(l) {
+      lang = l;
+      document.documentElement.lang = l;
+      document.body.classList.toggle('lang-ja', l === 'ja');
+      document.body.classList.toggle('lang-en', l === 'en');
+      const dict = i18n[l];
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key] !== undefined) el.textContent = dict[key];
+      });
+      document.title = dict['_title'];
+      toggle.textContent = l === 'ja' ? 'EN' : 'JP';
+    }
+
+    toggle.addEventListener('click', () => applyLang(lang === 'ja' ? 'en' : 'ja'));
+    applyLang('ja');
+  </script>
 </body>
 </html>
