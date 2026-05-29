@@ -86,6 +86,21 @@ body.lang-ja .tagline p {
   font-style: normal;
 }
 
+/* JP characters are denser — nudge sizes up to feel visually equivalent to EN */
+body.lang-ja .hero-subtitle { font-size: 1.1rem; }
+body.lang-ja .hero-note { font-size: 1.1rem; }
+body.lang-ja .tagline p { font-size: 1.15rem; }
+body.lang-ja .section-title { font-size: 2.7rem; }
+body.lang-ja .about-text { font-size: 1.2rem; }
+body.lang-ja .work-lead { font-size: 1.15rem; }
+body.lang-ja .offer-card h3 { font-size: 1.6rem; }
+body.lang-ja .offer-card p { font-size: 1.05rem; }
+body.lang-ja .contact-lead { font-size: 1.1rem; }
+body.lang-ja .contact-label { font-size: 0.85rem; }
+body.lang-ja .contact-note { font-size: 1.05rem; }
+body.lang-ja .footer p { font-size: 0.9rem; }
+body.lang-ja .nav-links a { font-size: 0.85rem; }
+
 .hero {
   min-height: 85vh;
   display: flex;
@@ -107,18 +122,18 @@ body.lang-ja .tagline p {
 .hero-subtitle {
   margin-top: 1.5rem;
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: 1rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
 
 .hero-note {
-  margin-top: 1.25rem;
+  margin-top: 1rem;
   color: var(--accent);
-  font-size: 0.7rem;
-  letter-spacing: 0.35em;
+  font-family: var(--sans);
+  font-size: 1rem;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
-  opacity: 0.85;
 }
 
 .tagline {
